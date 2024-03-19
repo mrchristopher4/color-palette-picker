@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Color Scheme Generator</title>
+    </head>
+
+    <body>
+        <header>
+            <form>
+                <input type="color" value="#F55A5A" class="color-selector" id="colorSelector" />
+                <select name="selection-menu" class="selection-menu" id="selectionMenu">
+                    <option value="monochrome" selected="selected">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button class="select-btn" id="selectBtn">Get Color Scheme</button>
+            </form>
+        </header>
+
+        <main>
+            <!-- <div class="color-columns-section"> -->
+                <div class="color-column-display" id="colorColumn1">colorColumn-1</div>
+                <div class="color-column-display" id="colorColumn2">colorColumn-2</div>
+                <div class="color-column-display" id="colorColumn3">colorColumn-3</div>
+                <div class="color-column-display" id="colorColumn4">colorColumn-4</div>
+                <div class="color-column-display" id="colorColumn5">colorColumn-5</div>
+            <!-- </div> -->
+
+            <!-- <div class="color-codes-section"> -->
+                <p id="colorCode1">${colorIdCode-1}</p>
+                <p id="colorCode2">${colorIdCode-2}</p>
+                <p id="colorCode3">${colorIdCode-3}</p>
+                <p id="colorCode4">${colorIdCode-4}</p>
+                <p id="colorCode5">${colorIdCode-5}</p>
+            <!-- </div> -->
+        </main>
+
+        <footer>
+        </footer>
+
+        <script src="./index.js" type="module"></script>
+    </body>
+</html>
