@@ -1,4 +1,4 @@
-/* ---> Custom Font Family Load-In/Setup <--- */
+/* ---> Custom Font Family Load-In/Setup <--- 
 .inter-400 {
     // <uniquifier>: Use a unique and descriptive class name
     // <weight>: Use a value from 100 to 900
@@ -33,7 +33,7 @@
     font-style: normal;
     font-variation-settings:
     "slnt" 0;
-}
+}*/
 
 /* ---> Overall CSS Formatting <--- */
 html, body {
@@ -45,45 +45,62 @@ html, body {
 
 /* ---> Header Section CSS Formatting <--- */
 header {
-    margin-top: 1rem;
+    padding: 1.5em 1em;
 }
 
 form {
     display: grid;
-    grid-template-columns: minmax(auto-fit, 1fr);
-    grid-auto-flow: column;
+    grid-template-columns: auto 1fr auto;
+    /* grid-auto-flow: column; */
     align-items: center;
     justify-items: center;
+    grid-gap: 1em;
+}
+
+.color-selector,
+.selection-menu,
+.select-btn {
+    height: 3rem;
 }
 
 .color-selector{
-    height: 3vh;
-    width: 6vw;
+    /* height: 3vh; */
+    /* width: 6vw; */
     border: 5px solid black;
+    padding: 0;
+    /* border: none; */
+    border-color: lightgray;
 }
 
 
 .selection-menu {
-    height: 3em;
-    width: 20em;
+    /* height: 3em; */
+    width: 100%;
     font: inherit;
+    /* padding: .75em; */
 }
 
 .select-btn {
-    height: 2em;
-    width: max-content;
+    /* height: 2em; */
+    /* width: max-content; */
     font: inherit;
 }
 
-/*.color-columns-section {
-    display: grid;
-    grid-template: repeat(10, 1fr) / repeat(5, minmax(max-content, 1fr)) 
-    grid-auto-flow: column;
-}*/
+.main {
+    padding-top: 50em;
+}
 
-main {
-    margin-top: 100px;
+.color-columns-section {
     display: grid;
-    grid-auto-flow: row;
-    grid-template: repeat(2, 1fr) / repeat(5, minmax(max-content, 1fr)) 
+    grid-template-columns: repeat(5, 1fr);
+    height: 500px;
+}
+
+.color-codes-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-family: 'inter-500', sans-serif;
+    font-size: 12px;
+
+    justify-items: center;;
 }

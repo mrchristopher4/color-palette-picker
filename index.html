@@ -9,9 +9,9 @@
 
     <body>
         <header>
-            <form>
-                <input type="color" value="#F55A5A" class="color-selector" id="colorSelector" />
-                <select name="selection-menu" class="selection-menu" id="selectionMenu">
+            <form id="color-selection-form">
+                <input type="color" value="#F55A5A" class="color-selector" id="color-selector" />
+                <select name="selection-menu" class="selection-menu" id="selection-menu">
                     <option value="monochrome" selected="selected">Monochrome</option>
                     <option value="monochrome-dark">Monochrome-dark</option>
                     <option value="monochrome-light">Monochrome-light</option>
@@ -20,26 +20,13 @@
                     <option value="analogic-complement">Analogic-complement</option>
                     <option value="triad">Triad</option>
                 </select>
-                <button class="select-btn" id="selectBtn">Get Color Scheme</button>
+                <button class="select-btn" id="select-btn">Get Color Scheme</button>
             </form>
         </header>
 
-        <main>
-            <!-- <div class="color-columns-section"> -->
-                <div class="color-column-display" id="colorColumn1">colorColumn-1</div>
-                <div class="color-column-display" id="colorColumn2">colorColumn-2</div>
-                <div class="color-column-display" id="colorColumn3">colorColumn-3</div>
-                <div class="color-column-display" id="colorColumn4">colorColumn-4</div>
-                <div class="color-column-display" id="colorColumn5">colorColumn-5</div>
-            <!-- </div> -->
-
-            <!-- <div class="color-codes-section"> -->
-                <p id="colorCode1">${colorIdCode-1}</p>
-                <p id="colorCode2">${colorIdCode-2}</p>
-                <p id="colorCode3">${colorIdCode-3}</p>
-                <p id="colorCode4">${colorIdCode-4}</p>
-                <p id="colorCode5">${colorIdCode-5}</p>
-            <!-- </div> -->
+        <main id="main">
+             <div class="color-columns-section" id="color-columns-section"></div> 
+             <div class="color-codes-section" id="color-codes-section"></div> 
         </main>
 
         <footer>
